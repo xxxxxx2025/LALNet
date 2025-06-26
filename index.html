@@ -67,21 +67,54 @@
   <div class="page-wrapper">
     <main class="main-wrapper">
 
-      <!-- 标题 -->
+      <!-- 标题 + 摘要 -->
       <section class="section_example">
-            <div class="padding-section-example">
-              <div class="example_component">
-                <div class="example_info_wrapper">
-                  <div class="example_info_title-wrapper">
+        <div class="padding-section-example">
+          <div class="example_component">
+            <div class="example_info_wrapper">
+              <div class="example_info_title-wrapper">
+                <br>
+                <br>
+                <h1>LALNet (ICML2025)</h1>
+                <br>
+                <h2>Learning Adaptive Lighting via Channel-Aware Guidance</h2>
 
-                    <h1>LALNet</h1>
-
-                    <h2>Learning Adaptive Lighting via Channel-Aware Guidance</h2>
-                  </div>
+                <!-- 摘要框 -->
+                <div style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  background-color: #f9f9f9;
+                  padding: 20px;
+                  border-radius: 10px;
+                  border: 1px solid #ccc;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                  font-size: 16px;
+                  line-height: 1.6;
+                ">
+                  <strong>Abstract:</strong><br>
+                Learning lighting adaptation is a crucial step in achieving good visual perception and supporting downstream vision tasks. 
+                Current research often addresses individual light-related challenges, such as high dynamic range imaging and exposure correction, in isolation. 
+                However, we identify shared fundamental properties across these tasks: i) different color channels have different light properties, and ii) the channel differences reflected in the spatial and frequency domains are different. 
+                Leveraging these insights, we introduce the channel-aware Learning Adaptive Lighting Network (LALNet), a multi-task framework designed to handle multiple light-related tasks efficiently. 
+                Specifically, LALNet incorporates color-separated features that highlight the unique light properties of each color channel, integrated with traditional color-mixed features by Light Guided Attention (LGA). 
+                The LGA utilizes color-separated features to guide color-mixed features focusing on channel differences and ensuring visual consistency across all channels. 
+                Additionally, LALNet employs dual domain channel modulation for generating color-separated features and a mixed channel modulation and light state space module for producing color-mixed features. 
+                Extensive experiments on four representative light-related tasks demonstrate that LALNet significantly outperforms state-of-the-art methods on benchmark tests and requires fewer computational resources. 
                 </div>
+                <!-- /摘要框 -->
+
               </div>
             </div>
+          </div>
+        </div>
       </section>
+
+      <!-- 视频演示部分 -->
+      <div style="text-align: center; margin-top: 0px; margin-bottom: 0px;">
+        <video src="videos/demo_720p.mp4" autoplay muted loop controls width="60%"></video>
+      </div>
+      <br><br>
+
 
       <!-- hdr+ 480p -->
       <section class="section_example" id="zz">
@@ -94,8 +127,6 @@
                   <h3>Comparison of LALNet with other methods on Image Retouching dataset (HDR+)</h3>
                 </div>
               </div>
-              
-              
               <div style="display: flex;">
                 <div class="example_wrapper is-1" style="margin-left: 10px;">
                   <div class="example_title_wrapper">
